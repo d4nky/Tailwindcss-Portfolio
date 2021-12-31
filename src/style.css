@@ -1,0 +1,7 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto'), url(/fonts/GlacialIndifference-Regular.ttf) format('ttf');
+}
