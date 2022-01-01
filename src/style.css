@@ -1,7 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Libre+Franklin:wght@400;600&family=Montserrat:wght@200;400;700&family=Poppins&family=Rubik:wght@500&family=Secular+One&family=Space+Mono:wght@400;700&display=swap');
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
-@font-face {
-    font-family: 'Roboto';
-    src: local('Roboto'), url(/fonts/GlacialIndifference-Regular.ttf) format('ttf');
-}

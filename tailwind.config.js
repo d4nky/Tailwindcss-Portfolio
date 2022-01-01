@@ -1,9 +1,12 @@
 module.exports = {
   content: ['./dist/*.html'],
   theme: {
+    screens: {
+      'xsm': '480px'
+    },
     extend: {
       fontFamily: {
-        'sans': ['Roboto', 'Helvetica', 'Arial', 'sans-serif']
+        'custom': ['Montserrat', 'mono'],
       }
     },
   },
