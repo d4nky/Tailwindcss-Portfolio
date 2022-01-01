@@ -10,7 +10,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "build": "tailwindcss build -i src/style.css -o dist/styles.css"
+    "build-css": "tailwindcss build -i src/style.css -o dist/styles.css"
   },
   "repository": {
     "type": "git",
