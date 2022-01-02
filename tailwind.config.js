@@ -7,6 +7,9 @@ module.exports = {
     extend: {
       fontFamily: {
         'custom': ['Montserrat', 'mono'],
+        backgroundImage: {
+        'header': "url('/img/background.jpg')",
+      }
       },
       keyframes: {
         typewriter: {
