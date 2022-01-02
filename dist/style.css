@@ -425,25 +425,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-.sticky{
-  position: -webkit-sticky;
-  position: sticky;
+*, ::before, ::after{
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
+}
+
+.fixed{
+  position: fixed;
 }
 
 .top-0{
   top: 0px;
 }
 
-.m-0{
-  margin: 0px;
-}
-
 .m-auto{
   margin: auto;
-}
-
-.-mt-24{
-  margin-top: -6rem;
 }
 
 .flex{
@@ -466,8 +462,39 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
-.w-0{
-  width: 0px;
+.max-w-fit{
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+@-webkit-keyframes nav{
+  0%{
+    opacity: 0;
+    margin-top: -200px;
+  }
+
+  100%{
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+
+@keyframes nav{
+  0%{
+    opacity: 0;
+    margin-top: -200px;
+  }
+
+  100%{
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+
+.animate-nav{
+  -webkit-animation: nav .5s forwards;
+          animation: nav .5s forwards;
 }
 
 @-webkit-keyframes typewriter{
@@ -490,9 +517,29 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+@-webkit-keyframes blink{
+  from{
+    border-color: transparent;
+  }
+
+  to{
+    border-color: white;
+  }
+}
+
+@keyframes blink{
+  from{
+    border-color: transparent;
+  }
+
+  to{
+    border-color: white;
+  }
+}
+
 .animate-typewriter{
-  -webkit-animation: typewriter 2.5s steps(200, end) forwards;
-          animation: typewriter 2.5s steps(200, end) forwards;
+  -webkit-animation: typewriter 12s forwards, blink .5s infinite;
+          animation: typewriter 12s forwards, blink .5s infinite;
 }
 
 .flex-col{
@@ -523,6 +570,19 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .whitespace-nowrap{
   white-space: nowrap;
+}
+
+.border-r-2{
+  border-right-width: 2px;
+}
+
+.border-solid{
+  border-style: solid;
+}
+
+.border-white{
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .bg-white{
@@ -611,6 +671,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .placeholder-white::placeholder{
   --tw-placeholder-opacity: 1;
   color: rgb(255 255 255 / var(--tw-placeholder-opacity));
+}
+
+.transition-all{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .transition{
