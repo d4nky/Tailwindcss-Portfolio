@@ -15,7 +15,7 @@ module.exports = {
       }
     },
     animation: {
-        typewriter: 'typewriter 1.5s steps(50, end) forwards',
+        typewriter: 'typewriter 2.5s steps(200, end) forwards',
       }
     }, 
   },
