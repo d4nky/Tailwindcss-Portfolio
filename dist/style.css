@@ -542,8 +542,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .animate-typewriter{
-  -webkit-animation: typewriter 12s forwards, blink .5s infinite;
-          animation: typewriter 12s forwards, blink .5s infinite;
+  -webkit-animation: typewriter 6s steps(120, end) forwards, blink .5s infinite;
+          animation: typewriter 6s steps(120, end) forwards, blink .5s infinite;
 }
 
 .flex-col{
