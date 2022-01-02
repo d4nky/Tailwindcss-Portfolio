@@ -5,11 +5,11 @@ module.exports = {
       'xsm': '480px'
     },
     extend: {
+      backgroundImage: {
+      'header': "url('/img/background.jpg')",
+    },
       fontFamily: {
         'custom': ['Montserrat', 'mono'],
-        backgroundImage: {
-        'header': "url('/img/background.jpg')",
-      }
       },
       keyframes: {
         typewriter: {
