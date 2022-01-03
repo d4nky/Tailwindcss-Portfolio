@@ -624,7 +624,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .bg-header{
-  background-image: url('/img/background.jpg');
+  background-image: url('img/background.jpg');
 }
 
 .bg-cover{

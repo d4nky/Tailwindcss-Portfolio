@@ -6,7 +6,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-      'header': "url('/img/background.jpg')",
+      'header': "url('img/background.jpg')",
     },
       fontFamily: {
         'custom': ['Montserrat', 'mono'],
