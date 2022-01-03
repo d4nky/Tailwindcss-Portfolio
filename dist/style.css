@@ -442,6 +442,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin: auto;
 }
 
+.-mr-52{
+  margin-right: -13rem;
+}
+
 .flex{
   display: flex;
 }
@@ -586,12 +590,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 1.25rem;
 }
 
-.space-x-16 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-x-reverse: 0;
-  margin-right: calc(4rem * var(--tw-space-x-reverse));
-  margin-left: calc(4rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
 .overflow-hidden{
   overflow: hidden;
 }
@@ -657,22 +655,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: Montserrat, mono;
 }
 
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-.text-sm{
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
 .font-bold{
   font-weight: 700;
-}
-
-.font-normal{
-  font-weight: 400;
 }
 
 .font-thin{
@@ -725,4 +709,86 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:text-slate-300:hover{
   --tw-text-opacity: 1;
   color: rgb(203 213 225 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px){
+  .sm\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+@media (min-width: 768px){
+  .md\:w-3\/5{
+    width: 60%;
+  }
+
+  .md\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:flex{
+    display: flex;
+  }
+
+  .lg\:hidden{
+    display: none;
+  }
+
+  @-webkit-keyframes nav{
+    0%{
+      opacity: 0;
+      margin-top: -200px;
+    }
+
+    100%{
+      opacity: 1;
+      margin-top: 0px;
+    }
+  }
+
+  @keyframes nav{
+    0%{
+      opacity: 0;
+      margin-top: -200px;
+    }
+
+    100%{
+      opacity: 1;
+      margin-top: 0px;
+    }
+  }
+
+  .lg\:animate-nav{
+    -webkit-animation: nav 1s forwards;
+            animation: nav 1s forwards;
+  }
+
+  .lg\:items-center{
+    align-items: center;
+  }
+
+  .lg\:space-x-16 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(4rem * var(--tw-space-x-reverse));
+    margin-left: calc(4rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .lg\:text-sm{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .lg\:font-normal{
+    font-weight: 400;
+  }
+
+  .lg\:transition-all{
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
 }
