@@ -10,6 +10,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 
 
+
+const headerTitle = document.getElementById('header-title');
+const mobileMenu = document.querySelector('#mobile-menu');
+const btn = document.querySelector('#mobile-button');
+const content = document.getElementById('content');
+
 const navbar = document.querySelector('nav');
 const navbarActive = document.getElementById('navbar');
 const offsetY = 50;
@@ -28,30 +34,26 @@ window.addEventListener('scroll', (e) =>{
     }
 });
 
-const headerTitle = document.getElementById('header-title');
-const mobileMenu = document.getElementById('mobile-menu');
-const btn = document.getElementById('mobile-button');
-const content = document.getElementById('content');
-
 let menuToggle = false;
 
 mobileMenu.style.right = '-600px';
 
-function menuOpen(){
+btn.addEventListener('click', (e) =>{
     if (menuToggle == false){
         mobileMenu.style.right = '0px';
+        headerTitle.style.marginLeft = '-600px';
+        btn.style.marginRight = '47.5%';
         menuToggle = true;
     }
     else if (menuToggle == true){
         mobileMenu.style.right = '-600px';
+        headerTitle.style.marginLeft = '0px';
+        btn.style.marginRight = '0px'
         menuToggle = false;
     }
-}
+});
 
-function menuClose(){
-    mobileMenu.style.right = '-600px';
-}
+// function menuClose(){
+//     mobileMenu.style.right = '-600px';
+// }
 
-
-btn.onclick = menuOpen;
-content.onclick = menuClose;

@@ -9,14 +9,27 @@
     <link rel="shortcut icon" href="img/logo_size.jpg" type="image/png" /> 
 
 </head>
-<body>
-    <div id="content">
-        <div id="home" class="bg-header bg-center bg-cover bg-no-repeat w-full h-screen text-white font-custom font-bold">
-            <nav id="navbar" class="py-4 fixed top-0 px-10 lg:py-8 w-full flex justify-between items-center transition-all">
-                <div>
+<body> 
+    
+
+    <div id="mobile-navbar" class="lg:hidden z-10 w-full text-white font-custom font-bold py-4 fixed top-0 px-10">
+    <div class="flex justify-between items-center ">
+            <h1 id="header-title" class="text-l transition-all animate-nav md:text-3xl sm:text-2xl">FARES KHERBANE</h1>
+            <img id="mobile-button" class="animate-nav w-10 sm:w-12 md:w-16 transition-all lg:hidden" src="img/icons/hamburger.png" alt="">   
+        </div>
+    </div>
+        <div class="lg:hidden flex justify-end items-center">
+            <div id="mobile-menu" class="-z-1 fixed top-0 h-screen w-3/5  m-0 float-right flex flex-col justify-evenly items-center font-normal text-l text-white font-custom bg-black transition-all">
+                <a href="#main">HOME</a>
+                <a href="#work">WORK</a>
+                <a href="#about">ABOUT ME</a>
+                            <a href="#contact">CONTACT</a>
+                        </div>
+                    </div>
+            <div class="hidden lg:block">    
+            <nav id="navbar" class="text-white font-custom font-bold py-4 fixed top-0 px-10 lg:py-8 w-full flex justify-between items-center transition-all">
                     <h1 id="header-title" class="text-l transition-all animate-nav md:text-3xl sm:text-2xl">FARES KHERBANE</h1>
-                </div>
-                <img id="mobile-button" class="w-10 sm:w-12 md:w-16 transition-all lg:hidden" src="img/icons/hamburger.png" alt="">  
+                
                 <div class="hidden lg:font-normal lg:space-x-16 lg:text-sm lg:flex lg:items-center lg:transition-all lg:animate-nav">
                     <div>
                         <div class="transition ease-linear hover:text-slate-300"><a href="#home">HOME</a></div>
@@ -27,25 +40,21 @@
                     <div>
                         <div class="transition ease-linear hover:text-slate-300"><a href="#about">ABOUT ME</a></div>
                     </div> 
-                    <div class="lg:hidden flex justify-end items-center h-screen">
-                        <div id="mobile-menu" class="fixed h-full w-3/5 bg-black m-auto float-right flex flex-col justify-between items-center py-20 font-normal text-l">
-                            <a href="#main">HOME</a>
-                            <a href="#work">WORK</a>
-                            <a href="#about">ABOUT ME</a>
-                            <a href="#contact">CONTACT</a>
-                        </div>
-                    </div>
                     <div>
                         <div class="transition ease-linear hover:text-slate-300"><a href="#contact">CONTACT</a></div>
                     </div> 
                 </div>
-            </nav>
+            </nav>  
+           </div>  
+    <div id="home" class="bg-header bg-center bg-cover bg-no-repeat w-full text-white font-custom font-bold">
+        
             <div class="flex flex-col justify-center items-center text-center m-auto h-screen w-full">
                 <div class="border-r-2 border-solid border-white animate-typewriter max-w-fit">
                     <h1 class="text-l sm:text-2xl md:text-3xl font-thin m-auto overflow-hidden whitespace-nowrap ">Site in development.</h1>   
                     <!-- >web developer based in Algiers. -->
                 </div>
             </div>
+            
         </div>
         
         <div id="work" class="h-screen w-full bg-white text-black font-custom">
@@ -56,9 +65,7 @@
                 <div class="bg-white"><h1>test</h1></div>
                 
             </div> -->
-            
         </div>
-        
         
         <div id="about" class="h-screen w-full bg-black text-white font-custom">
             <nav class="px-10 py-8 w-full flex justify-between items-center">
@@ -74,9 +81,6 @@
                 <div>
                     <h1 class="text-l md:text-3xl sm:text-2xl font-bold">CONTACT</h1>
                 </div>
-                <div class="">
-                    <img src="img/icons/hamburger-white.svg" alt="">
-                </div>
                 
             </nav>
             <!-- <div class="flex justify-center items-center font-custom w-full h-full">
@@ -86,9 +90,8 @@
                 </form>
             </div> -->
         </div>
-    
         
-    </div>
+    
         <script src="main.js"></script>
     </body>
     </html>
