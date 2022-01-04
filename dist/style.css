@@ -434,10 +434,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: fixed;
 }
 
-.absolute{
-  position: absolute;
-}
-
 .top-0{
   top: 0px;
 }
@@ -466,12 +462,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100vh;
 }
 
-.h-2\/4{
-  height: 50%;
-}
-
 .h-full{
   height: 100%;
+}
+
+.h-2\/4{
+  height: 50%;
 }
 
 .h-2\/3{
@@ -482,12 +478,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
-.w-3\/4{
-  width: 75%;
-}
-
 .w-10{
   width: 2.5rem;
+}
+
+.w-3\/5{
+  width: 60%;
 }
 
 .w-2\/4{
@@ -590,6 +586,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: flex-start;
 }
 
+.justify-end{
+  justify-content: flex-end;
+}
+
 .justify-center{
   justify-content: center;
 }
@@ -649,11 +649,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-repeat: no-repeat;
 }
 
-.py-20{
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -662,6 +657,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-10{
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+}
+
+.py-20{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .py-8{
