@@ -45,7 +45,6 @@ btn.addEventListener('click', (e) =>{
         headerTitle.style.marginLeft = '-600px';
         btn.style.marginRight = '47.5%';
         mobileNavBar.style.backgroundColor = 'transparent'
-        btn.style.transform = "rotate(180deg)"
         menuToggle = true;
     }
     else if (menuToggle == true){
@@ -53,7 +52,6 @@ btn.addEventListener('click', (e) =>{
         headerTitle.style.marginLeft = '0px';
         btn.style.marginRight = '0px';
         mobileNavBar.style.backgroundColor = 'black'
-        btn.style.transform = "rotate(0deg)"
         menuToggle = false;
     }
 });
