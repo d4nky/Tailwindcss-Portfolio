@@ -486,8 +486,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
-.w-10{
-  width: 2.5rem;
+.w-1\/12{
+  width: 8.333333%;
 }
 
 .w-3\/5{
