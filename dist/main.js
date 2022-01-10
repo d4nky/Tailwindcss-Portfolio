@@ -16,6 +16,7 @@ const mobileMenu = document.querySelector('#mobile-menu');
 const btn = document.querySelector('#mobile-button');
 const content = document.getElementById('content');
 
+const mobileNavBar = document.getElementById('mobile-navbar')
 const navbar = document.querySelector('nav');
 const navbarActive = document.getElementById('navbar');
 const offsetY = 50;
@@ -43,12 +44,14 @@ btn.addEventListener('click', (e) =>{
         mobileMenu.style.right = '0px';
         headerTitle.style.marginLeft = '-600px';
         btn.style.marginRight = '47.5%';
+        mobileNavBar.style.backgroundColor = 'transparent'
         menuToggle = true;
     }
     else if (menuToggle == true){
         mobileMenu.style.right = '-600px';
         headerTitle.style.marginLeft = '0px';
-        btn.style.marginRight = '0px'
+        btn.style.marginRight = '0px';
+        mobileNavBar.style.backgroundColor = 'black'
         menuToggle = false;
     }
 });
