@@ -12,7 +12,7 @@
 	<body>
 		<div
 			id="mobile-navbar"
-			class="lg:hidden z-10 w-full text-white font-custom font-bold py-4 bg-black fixed top-0 px-6 sm:px-10 transition-all"
+			class="z-20 lg:hidden w-full text-white font-custom font-bold py-4 bg-black fixed top-0 px-6 sm:px-10 transition-all"
 		>
 			<div class="flex justify-between items-center">
 				<h1
@@ -23,16 +23,16 @@
 				</h1>
 				<img
 					id="mobile-button"
-					class="animate-nav w-1/12 sm:w-12 md:w-16 transition-all lg:hidden"
+					class=" animate-nav w-1/12 sm:w-12 md:w-16 transition-all lg:hidden"
 					src="img/icons/hamburger.png"
 					alt=""
 				/>
 			</div>
 		</div>
-		<div class="lg:hidden flex justify-end items-center">
+		<div class="z-10 lg:hidden flex justify-end items-center">
 			<div
 				id="mobile-menu"
-				class="-z-1 fixed top-0 h-screen w-3/5 m-0 float-right flex flex-col justify-evenly items-center font-normal text-l text-white font-custom bg-black transition-all"
+				class="fixed top-0 h-screen w-3/5 m-0 float-right flex flex-col justify-evenly items-center font-normal text-l text-white font-custom bg-black transition-all"
 			>
 				<a href="#home">HOME</a>
 				<a href="#work">WORK</a>
@@ -110,19 +110,20 @@
 			<!-- <div class="bg-black w-52 h-52"></div> -->
 		</div>
 
-		<div id="about" class="h-screen w-full bg-black text-white font-custom">
+		<div id="about" class="z-10 h-screen w-full bg-black text-white font-custom">
 			<nav class="px-10 py-8 w-full flex justify-between items-center">
 				<div data-aos="fade-right">
 					<h1 class="text-l md:text-3xl sm:text-2xl font-bold">ABOUT ME</h1>
 				</div>
 			</nav>
+			<div data-aos="fade-down" data-aos-delay="200" id="picture" class="bg-profile bg-cover bg-center mt-8 w-40 h-40 flex justify-center align-middle m-auto rounded-full lg:mt-24"></div>
 			<div
 				id="about-text-container"
-				class="h-full w-full m-auto flex"
-				data-aos="fade" data-aos-delay="500"
+				class="h-screen w-full m-auto flex"
+				data-aos="fade-up" data-aos-delay="500"
 			>
 				<div
-					class="text-l pt-10 px-10 font-thin flex align-middle leading-5 justify-center sm:text-2xl md:text-2xl lg:px-52"
+					class="text-l my-8 py-10 px-10 font-thin flex align-middle leading-5 justify-center sm:text-2xl md:text-2xl lg:px-52"
 					id="about-text"
 				>
 					Hello, my name is Fares. I'm a self-taught web developer specializing
