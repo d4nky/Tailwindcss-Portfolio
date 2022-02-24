@@ -21,13 +21,14 @@ const offsetY = 50;
 window.addEventListener("scroll", (e) => {
 	console.log(window.pageYOffset);
 	if (window.pageYOffset > offsetY) {
-		navbar.style.backgroundColor = "black";
-		navbar.style.paddingTop = "38px";
-		navbar.style.paddingBottom = "38px";
+		navbar.style.backgroundColor = "hsla(0, 0%, 0%, 0.500)";
+        navbar.style.backdropFilter = "blur(12px)";
+		navbar.style.paddingTop = "34px";
+		navbar.style.paddingBottom = "34px";
 	} else if (window.pageYOffset < offsetY) {
 		navbar.style.backgroundColor = "transparent";
-		navbar.style.paddingTop = "32px";
-		navbar.style.paddingBottom = "32px";
+		navbar.style.paddingTop = "30px";
+		navbar.style.paddingBottom = "30px";
 	}
 });
 
