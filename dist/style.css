@@ -483,12 +483,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 13rem;
 }
 
-.h-40{
-  height: 10rem;
-}
-
 .h-full{
   height: 100%;
+}
+
+.h-32{
+  height: 8rem;
 }
 
 .h-2\/3{
@@ -511,8 +511,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 13rem;
 }
 
-.w-40{
-  width: 10rem;
+.w-32{
+  width: 8rem;
 }
 
 .max-w-fit{
@@ -716,8 +716,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .text-sm{
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  font-size: .875rem;
 }
 
 .font-bold{
@@ -732,8 +731,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 100;
 }
 
-.leading-5{
-  line-height: 1.25rem;
+.leading-8{
+  line-height: 2rem;
 }
 
 .text-white{
@@ -796,29 +795,34 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .sm\:text-2xl{
     font-size: 1.5rem;
-    line-height: 2rem;
   }
 }
 
 @media (min-width: 768px){
+  .md\:h-40{
+    height: 10rem;
+  }
+
   .md\:w-16{
     width: 4rem;
   }
 
+  .md\:w-40{
+    width: 10rem;
+  }
+
   .md\:text-3xl{
     font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 
   .md\:text-2xl{
     font-size: 1.5rem;
-    line-height: 2rem;
   }
 }
 
 @media (min-width: 1024px){
-  .lg\:mt-24{
-    margin-top: 6rem;
+  .lg\:mt-32{
+    margin-top: 8rem;
   }
 
   .lg\:block{
@@ -831,6 +835,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:hidden{
     display: none;
+  }
+
+  .lg\:h-52{
+    height: 13rem;
+  }
+
+  .lg\:h-screen{
+    height: 100vh;
+  }
+
+  .lg\:w-52{
+    width: 13rem;
   }
 
   @-webkit-keyframes nav{
@@ -883,8 +899,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 
   .lg\:text-sm{
-    font-size: 0.875rem;
-    line-height: 1.25rem;
+    font-size: .875rem;
   }
 
   .lg\:font-normal{
