@@ -58,7 +58,7 @@ module.exports = {
 			},
 			animation: {
 				typewriter:
-					"typewriter 3s steps(120, end) forwards, blink .5s infinite",
+					"typewriter 3s steps(120, end) forwards, blink 1s infinite",
 				nav: "nav 1s forwards",
 			},
 		},
