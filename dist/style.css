@@ -591,6 +591,10 @@ Ensure the default browser behavior of the `hidden` attribute.
           animation: typewriter 3s steps(120, end) forwards, blink 1s infinite;
 }
 
+.cursor-default{
+  cursor: default;
+}
+
 .flex-col{
   flex-direction: column;
 }
@@ -884,9 +888,14 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-left: calc(4rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .lg\:py-8{
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+  .lg\:py-0\.5{
+    padding-top: 0.125rem;
+    padding-bottom: 0.125rem;
+  }
+
+  .lg\:py-0{
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
   .lg\:px-52{
