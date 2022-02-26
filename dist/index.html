@@ -4,7 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Portfolio</title>
+		<meta name="description" content="Front-end web developer based in Algiers" />
+		<title>Fares Kherbane</title>
 		<link rel="stylesheet" href="style.css" />
 		<link rel="shortcut icon" href="img/logo_size.jpg" type="image/png" />
 		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -12,7 +13,7 @@
 	<body>
 		<div
 			id="mobile-navbar"
-			class="z-20 lg:hidden w-full text-white font-custom font-bold py-4 bg-black fixed top-0 px-6 sm:px-10 transition-all"
+			class="z-30 lg:hidden w-full text-white font-custom font-bold py-4 bg-black bg-opacity-30 backdrop-blur-md fixed top-0 px-6 sm:px-10 transition-all"
 		>
 			<div class="flex justify-between items-center">
 				<h1
@@ -23,140 +24,166 @@
 				</h1>
 				<img
 					id="mobile-button"
-					class=" animate-nav w-1/12 sm:w-12 md:w-16 transition-all lg:hidden"
+					class="animate-nav w-1/12 sm:w-12 md:w-16 transition-all lg:hidden"
 					src="img/icons/hamburger.png"
-					alt=""
+					alt="mobile-button"
 				/>
 			</div>
 		</div>
-		<div class="z-10 lg:hidden flex justify-end items-center">
-			<div
-				id="mobile-menu"
-				class="fixed top-0 h-screen w-3/5 m-0 float-right flex flex-col justify-evenly items-center font-normal text-l text-white font-custom bg-black transition-all"
-			>
-				<a href="#home">HOME</a>
-				<a href="#work">WORK</a>
-				<a href="#about">ABOUT ME</a>
-				<a href="#contact">CONTACT</a>
-			</div>
-		</div>
-		<div class="hidden lg:block">
-			<nav
-				id="navbar"
-				class="text-white font-custom font-bold py-4 fixed top-0 px-10 lg:py-8 w-full flex justify-between items-center transition-all"
-			>
-				<h1
-					id="header-title"
-					class="text-l transition-all animate-nav md:text-3xl sm:text-2xl"
-				>
-					FARES KHERBANE
-				</h1>
-
+		<div id="content">
+			<div class="z-20 lg:hidden flex justify-end items-center">
 				<div
-					class="hidden lg:font-normal lg:space-x-16 lg:text-sm lg:flex lg:items-center lg:transition-all lg:animate-nav"
+					id="mobile-menu"
+					class="fixed top-0 h-screen w-3/5 m-0 float-right flex flex-col justify-evenly items-center font-normal text-l text-white font-custom bg-black bg-opacity-30 backdrop-blur-md transition-all"
 				>
-					<div>
-						<div class="transition ease-linear hover:text-slate-300">
-							<a href="#home">HOME</a>
-						</div>
-					</div>
-					<div>
-						<div class="transition ease-linear hover:text-slate-300">
-							<a href="#work">WORK</a>
-						</div>
-					</div>
-					<div>
-						<div class="transition ease-linear hover:text-slate-300">
-							<a href="#about">ABOUT ME</a>
-						</div>
-					</div>
-					<div>
-						<div class="transition ease-linear hover:text-slate-300">
-							<a href="#contact">CONTACT</a>
-						</div>
-					</div>
+					<a href="#home">HOME</a>
+					<a href="#work">WORK</a>
+					<a href="#about">ABOUT ME</a>
+					<a href="#contact">CONTACT</a>
 				</div>
-			</nav>
-		</div>
-		<div
-			id="home"
-			class="bg-header bg-center bg-cover bg-no-repeat w-full text-white font-custom font-bold"
-		>
-			<div
-				class="flex flex-col justify-center items-center text-center m-auto h-screen w-full"
-			>
-				<div
-					class="border-r-2 border-solid border-white animate-typewriter max-w-fit"
+			</div>
+			<div class="z-20 hidden lg:block">
+				<nav
+					id="navbar"
+					class="text-white font-custom font-bold py-4 fixed top-0 px-10 lg:py-8 w-full flex justify-between items-center transition-all"
 				>
 					<h1
-						class="text-l sm:text-2xl md:text-3xl font-thin m-auto overflow-hidden whitespace-nowrap"
+						id="header-title"
+						class="cursor-default transition-all animate-nav md:text-3xl sm:text-2xl lg:text-4xl"
 					>
-						Site in development.
+						FARES KHERBANE
 					</h1>
-					<!-- >web developer based in Algiers. -->
-				</div>
+
+					<div
+						class="z-10 hidden lg:font-normal lg:space-x-16 lg:text-base lg:flex lg:items-center lg:transition-all lg:animate-nav"
+					>
+						<div>
+							<div class="transition ease-linear hover:text-slate-300">
+								<a href="#home">HOME</a>
+							</div>
+						</div>
+						<div>
+							<div class="transition ease-linear hover:text-slate-300">
+								<a href="#work">WORK</a>
+							</div>
+						</div>
+						<div>
+							<div class="transition ease-linear hover:text-slate-300">
+								<a href="#about">ABOUT ME</a>
+							</div>
+						</div>
+						<div>
+							<div class="transition ease-linear hover:text-slate-300">
+								<a href="#contact">CONTACT</a>
+							</div>
+						</div>
+					</div>
+				</nav>
 			</div>
-		</div>
-
-		<div id="work" class="h-screen w-full bg-white text-black font-custom">
-			<nav class="px-10 py-8 w-full flex justify-start items-center">
-				<h1
-					class="text-l md:text-3xl sm:text-2xl font-bold"
-					data-aos="fade-right"
-				>
-					WORK
-				</h1>
-			</nav>
-			<!-- <div class="bg-black w-52 h-52"></div> -->
-		</div>
-
-		<div id="about" class="z-10 h-full w-full bg-black text-white font-custom">
-			<nav class="px-10 py-8 w-full flex justify-between items-center">
-				<div data-aos="fade-right">
-					<h1 class="text-l md:text-3xl sm:text-2xl font-bold">ABOUT ME</h1>
-				</div>
-			</nav>
-			<div data-aos="fade-down" data-aos-delay="200" id="picture" class="bg-profile bg-cover bg-center my-8 w-32 h-32 flex justify-center align-middle m-auto rounded-full md:w-40 md:h-40 lg:mt-32 lg:w-52 lg:h-52"></div>
 			<div
-				id="about-text-container"
-				class="h-full w-full m-auto flex lg:h-screen"
-				data-aos="fade-up" data-aos-delay="500"
+				id="home"
+				class="bg-header bg-center bg-cover bg-no-repeat w-full text-white font-custom font-bold"
 			>
-				
-					<p class="text-l h-full my-8 py-10 px-10 font-thin flex align-middle leading-8 justify-center sm:text-2xl md:text-2xl lg:px-52"
-					id="about-text"> Hello, my name is Fares. I'm a self-taught web developer specializing
-					in front-end development, with half a year of experience and
-					proficient with HTML, CSS (Bootstrap, Tailwindcss), and Javascript.<br><br> My relationship with technology started at the very young
-					age of 5 years old where it sparked a never-ending curiosity and
-					motivation to learn more. I started having thorough and more serious
-					learning in programming around 2015, where I have learned about the
-					basic concepts of coding and PC building.<br><br> I'm constantly looking to
-					expand my knowledge and skills to deliver high-quality services and
-					prove to myself and people that nothing is impossible if you put your
-					mind to it. I have reached comfortable levels in programming skills
-					and worked on countless big and small/personal projects. Currently,
-					I'm starting my freelancing adventure, which I invite you to discover
-					and would make me so happy to share with you all.</p>
+				<div
+					class="flex flex-col justify-center items-center text-center m-auto h-screen w-full"
+				>
+					<div
+						class="border-r-2 border-solid border-white animate-typewriter max-w-fit"
+					>
+						<h2
+							class="cursor-default text-l sm:text-2xl md:text-3xl font-thin m-auto overflow-hidden whitespace-nowrap"
+						>
+							Web developer based in Algiers.
+						</h2>
+						<!-- >web developer based in Algiers. -->
+					</div>
+				</div>
 			</div>
-		</div>
 
-		<div id="contact" class="h-screen w-full bg-white text-black font-custom">
-			<nav class="px-10 py-8 w-full flex justify-between items-center">
-				<div>
-					<h1
+			<div id="work" class="h-screen w-full bg-white text-black font-custom">
+				<nav class="px-10 py-8 w-full flex justify-start items-center">
+					<h2
 						class="text-l md:text-3xl sm:text-2xl font-bold"
 						data-aos="fade-right"
 					>
-						CONTACT
-					</h1>
+						WORK
+					</h2>
+				</nav>
+				<div class="flex justify-center items-center h-3/4">Coming soon.</div>
+			</div>
+
+			<div
+				id="about"
+				class="z-10 h-full w-full bg-black text-white font-custom"
+			>
+				<nav class="px-10 py-8 w-full flex justify-between items-center">
+					<div data-aos="fade-right">
+						<h2 class="text-l md:text-3xl sm:text-2xl font-bold">ABOUT ME</h2>
+					</div>
+				</nav>
+				<div class="-mt-12">				
+				<div
+					data-aos="fade-down"
+					data-aos-delay="200"
+					id="picture"
+					class="bg-profile bg-cover bg-center mt-4 mb-8 w-32 h-32 flex justify-center align-middle m-auto rounded-full md:w-40 md:h-40 lg:mt-32 lg:w-52 lg:h-52"
+				></div>
+				<div
+					id="about-text-container"
+					class="h-full w-full m-auto flex lg:h-screen"
+					data-aos="fade-up"
+					data-aos-delay="500"
+				>
+					<p
+						class="text-l mt-7 mb-24 py-10 px-10 font-thin flex align-middle leading-8 justify-center sm:text-2xl md:text-2xl lg:px-52"
+						id="about-text"
+					>
+						Hello, my name is Fares. I'm a self-taught web developer
+						specializing in front-end development, with half a year of
+						experience and proficient with HTML, CSS (Bootstrap, Tailwindcss),
+						and Javascript.<br /><br />
+						My relationship with technology started at the very young age of 5
+						years old where it sparked a never-ending curiosity and motivation
+						to learn more. I started having thorough and more serious learning
+						in programming around 2015, where I have learned about the basic
+						concepts of coding and PC building.<br /><br />
+						I'm constantly looking to expand my knowledge and skills to deliver
+						high-quality services and prove to myself and people that nothing is
+						impossible if you put your mind to it. I have reached comfortable
+						levels in programming skills and worked on countless big and
+						small/personal projects. Currently, I'm starting my freelancing
+						adventure, which I invite you to discover and would make me so happy
+						to share with you all.
+					</p>
 				</div>
-			</nav>
-			<!-- <div class="flex justify-center items-center font-custom w-full h-full">
-                <form action="" class="text-black bg-black w-100 h-2/3 flex flex-col justify-center items-center">
-                    <input class="placeholder-white" type="text" id="input-name" name="name" placeholder="NAME*" required>
-                    <input class="placeholder-white"  type="email" id="input-email" name="email" placeholder="E-MAIL*" required>
+				</div>
+			</div>
+
+			<div id="contact" class="h-screen w-full bg-white text-black font-custom">
+				<nav class="px-10 py-8 w-full flex justify-between items-center">
+					<div>
+						<h2
+							class="text-l md:text-3xl sm:text-2xl font-bold"
+							data-aos="fade-right"
+						>
+							CONTACT
+						</h2>
+					</div>
+				</nav>
+				<div class="flex justify-center items-center font-custom w-full h-full">
+                <form action="submit" class="-mt-12 text-black flex items bg-center justify-between flex-col gap-1 h-3/4 w-2/4">
+                    <input data-aos="fade-right"
+						class="border-2 border-black w-128 h-12 p-2 placeholder-gray-500" type="text" id="input-name" name="name" placeholder="NAME*" required>
+                    <input data-aos="fade-right"
+					data-aos-delay="100" class="border-2 border-black w-128 h-12 p-2 placeholder-gray-500"  type="email" id="input-email" name="email" placeholder="E-MAIL*" required>
+					<input data-aos="fade-right"
+					data-aos-delay="200" class="border-2 border-black w-128 h-12 p-2 placeholder-gray-500"  type="text" id="input-email" name="email" placeholder="PHONE NUMBER" required>
+					<textarea data-aos="fade-right"
+					data-aos-delay="300" class="border-2 border-black w-128 h-42 p-2 placeholder-gray-500" name="description" placeholder="DESCRIPTION*" id="" cols="30" rows="10"></textarea>
+					<button class="self-center border-2 border-black hover:bg-gray-200 w-32 h-12">Submit</button>
                 </form>
-            </div> -->
+            </div>
+			</div>
 		</div>
 
 		<script src="main.js"></script>
