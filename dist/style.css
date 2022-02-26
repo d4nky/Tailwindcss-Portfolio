@@ -448,6 +448,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 0px;
 }
 
+.z-30{
+  z-index: 30;
+}
+
 .z-20{
   z-index: 20;
 }
@@ -484,6 +488,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 6rem;
 }
 
+.-mt-12{
+  margin-top: -3rem;
+}
+
 .flex{
   display: flex;
 }
@@ -508,8 +516,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 8rem;
 }
 
-.h-2\/3{
-  height: 66.666667%;
+.h-3\/4{
+  height: 75%;
+}
+
+.h-12{
+  height: 3rem;
 }
 
 .w-full{
@@ -530,6 +542,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-32{
   width: 8rem;
+}
+
+.w-2\/4{
+  width: 50%;
 }
 
 .max-w-fit{
@@ -644,6 +660,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-evenly;
 }
 
+.gap-1{
+  gap: 0.25rem;
+}
+
+.self-center{
+  align-self: center;
+}
+
 .overflow-hidden{
   overflow: hidden;
 }
@@ -654,6 +678,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .rounded-full{
   border-radius: 9999px;
+}
+
+.border-2{
+  border-width: 2px;
 }
 
 .border-r-2{
@@ -667,6 +695,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-white{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-black{
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .bg-black{
@@ -701,6 +734,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-no-repeat{
   background-repeat: no-repeat;
+}
+
+.p-2{
+  padding: 0.5rem;
 }
 
 .py-4{
@@ -770,19 +807,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-.placeholder-white::-moz-placeholder{
+.placeholder-gray-500::-moz-placeholder{
   --tw-placeholder-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-placeholder-opacity));
+  color: rgb(107 114 128 / var(--tw-placeholder-opacity));
 }
 
-.placeholder-white:-ms-input-placeholder{
+.placeholder-gray-500:-ms-input-placeholder{
   --tw-placeholder-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-placeholder-opacity));
+  color: rgb(107 114 128 / var(--tw-placeholder-opacity));
 }
 
-.placeholder-white::placeholder{
+.placeholder-gray-500::placeholder{
   --tw-placeholder-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-placeholder-opacity));
+  color: rgb(107 114 128 / var(--tw-placeholder-opacity));
 }
 
 .backdrop-blur-md{
@@ -807,6 +844,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .ease-linear{
   transition-timing-function: linear;
+}
+
+.hover\:bg-gray-200:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
 .hover\:text-slate-300:hover{

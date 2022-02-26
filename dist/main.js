@@ -22,7 +22,7 @@ window.addEventListener("scroll", (e) => {
 	console.log(window.pageYOffset);
 	if (window.pageYOffset > offsetY) {
 		navbar.style.backgroundColor = "hsla(0, 0%, 0%, 0.500)";
-        navbar.style.backdropFilter = "blur(12px)";
+		navbar.style.backdropFilter = "blur(12px)";
 		navbar.style.paddingTop = "34px";
 		navbar.style.paddingBottom = "34px";
 	} else if (window.pageYOffset < offsetY) {
@@ -41,13 +41,17 @@ btn.addEventListener("click", (e) => {
 		mobileMenu.style.right = "0px";
 		headerTitle.style.marginLeft = "-600px";
 		btn.style.marginRight = "47.5%";
-		mobileNavBar.style.backgroundColor = "transparent";
+		mobileNavBar.classList.remove("bg-opacity-30");
+		mobileNavBar.classList.remove("bg-black");
+		mobileNavBar.classList.remove("backdrop-blur-md");
 		menuToggle = true;
 	} else if (menuToggle == true) {
 		mobileMenu.style.right = "-600px";
 		headerTitle.style.marginLeft = "0px";
+		mobileNavBar.classList.add("bg-opacity-30");
+		mobileNavBar.classList.add("bg-black");
+		mobileNavBar.classList.add("backdrop-blur-md");
 		btn.style.marginRight = "0px";
-		mobileNavBar.style.backgroundColor = "black";
 		menuToggle = false;
 	}
 });
@@ -55,6 +59,8 @@ content.addEventListener("click", () => {
 	mobileMenu.style.right = "-600px";
 	headerTitle.style.marginLeft = "0px";
 	btn.style.marginRight = "0px";
-	mobileNavBar.style.backgroundColor = "black";
+	mobileNavBar.classList.add("bg-opacity-30");
+	mobileNavBar.classList.add("bg-black");
+	mobileNavBar.classList.add("backdrop-blur-md");
 	menuToggle = false;
 });
