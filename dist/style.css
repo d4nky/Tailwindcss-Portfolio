@@ -504,10 +504,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100vh;
 }
 
-.h-52{
-  height: 13rem;
-}
-
 .h-full{
   height: 100%;
 }
@@ -534,10 +530,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-3\/5{
   width: 60%;
-}
-
-.w-52{
-  width: 13rem;
 }
 
 .w-32{
@@ -634,6 +626,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .flex-col{
   flex-direction: column;
+}
+
+.content-center{
+  align-content: center;
 }
 
 .items-center{
